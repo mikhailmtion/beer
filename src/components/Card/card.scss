@@ -1,0 +1,57 @@
+@import "src/variables.scss";
+
+.card {
+  min-width: 264px;
+  min-height: 200px;
+  padding: 14px;
+  border-radius: 6px;
+  background-color: $black;
+  cursor: pointer;
+  transition: $duration;
+  
+
+
+  &:hover {
+    background-color: $blue;
+  }
+  
+  &__info {
+    height: 65%;
+    p {
+      font-weight: 300;
+      font-size: 12px;
+    }
+    h2 {
+      font-weight: 500;
+      margin-bottom: 10px;
+      
+    }
+    h3 {
+      font-weight: 300;
+      
+     
+    }
+   
+  }
+  &__spec {
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+    li {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      b {
+        font-weight: 400;
+        font-size: 20px;
+      }
+
+      span {
+        font-weight: 300;
+        font-size: 16px;
+      }
+    }
+  }
+}

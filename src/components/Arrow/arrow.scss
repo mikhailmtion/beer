@@ -1,0 +1,9 @@
+@import "src/variables.scss";
+
+.arrow {
+    cursor: pointer;
+    height: 40px;
+    width: 200px;
+    background-color: $black;
+    text-align: center;
+}

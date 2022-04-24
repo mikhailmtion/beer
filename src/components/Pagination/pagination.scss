@@ -1,0 +1,44 @@
+@import "src/variables.scss";
+
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  &__right,&__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: $gray;
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 13px 14px;
+    transition: $duration;
+    &:hover {
+      background-color: $blue;
+    }
+  }
+
+  &__page {
+    margin-right: 10px;
+    background-color: $gray;
+    border-radius: 4px;
+    font-weight: 400;
+    padding: 14px 22px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: $duration;
+    &:hover {
+      background-color: $blue;
+    }
+
+    
+  }
+
+  .active {
+    background-color: $blue;
+}
+}

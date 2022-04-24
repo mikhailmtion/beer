@@ -1,0 +1,17 @@
+@import "src/variables.scss";
+
+.clear {
+  background-color: $black;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  padding: 9px;
+  font-weight: 600;
+  font-size: 20px;
+  color: $white;
+  text-align: center;
+  
+  &:hover {
+    background-color: $blue;
+  }
+}

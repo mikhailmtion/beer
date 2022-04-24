@@ -1,0 +1,19 @@
+@import "src/variables.scss";
+
+
+.error-banner{
+  background-color: $white;
+  border-radius: 6px;
+  width: 100%;
+  padding: 9px;
+  font-weight: 600;
+  font-size: 20px;
+  color: $white;
+  text-align: center;
+  span {
+    color: $black;
+  }
+  p {
+    color: $blue;
+  }
+}

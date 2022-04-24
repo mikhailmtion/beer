@@ -1,0 +1,93 @@
+@import "variables";
+@import "normalize";
+@import "/src/components/Header/header";
+@import "/src/components/Input/input";
+@import "/src/components/Sort/sort";
+@import "/src/components/Card/card";
+@import "/src/components/Arrow/arrow";
+@import "/src/components/Footer/footer";
+@import "/src/components/Clear/clear";
+@import "/src/components/ErrorBanner/error-banner";
+@import "/src/components/Loader/loader";
+@import "/src/components/Button/button";
+@import "/src/components/RandomCard/random-card";
+@import "/src/components/Pagination/pagination";
+
+@import "/src/Pages/About/about";
+@import "/src/Pages/BeerInfo/beerinfo";
+@import "/src/Pages/Random/random";
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.content {
+  width: calc(100vw - 40px);
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1146px;
+  padding-bottom: 40px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 96px;
+    margin-bottom: 60px;
+    @media screen and (max-width: 1080px) {
+      font-size: 60px;
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    @media screen and (max-width: 476px) {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+  }
+ 
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+    grid-gap: 1rem;
+    margin-bottom: 30px;
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+body {
+  background: linear-gradient(-45deg, #bcfe2f, #ee7752, #5551ff, #faff00);
+  background-size: 300% 300%;
+  animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

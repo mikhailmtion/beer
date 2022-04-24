@@ -1,0 +1,25 @@
+@import "src/variables.scss";
+
+.input {
+  flex: 1;
+}
+
+input {
+  max-width: 947px;
+  width:90%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 48px;
+  border: 3px solid $black;
+  border-radius: 6px;
+  background: $white;
+  padding-left: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  color: $black;
+  transition: $duration;
+  &:focus {
+    border: 3px solid $blue;
+    color: $blue;
+  }
+}
