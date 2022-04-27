@@ -4,7 +4,8 @@
   display: flex;
   justify-content: center;
 
-  &__right,&__left {
+  &__right,
+  &__left {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,11 +35,9 @@
     &:hover {
       background-color: $blue;
     }
-
-    
   }
 
   .active {
     background-color: $blue;
-}
+  }
 }
