@@ -1,5 +1,6 @@
 @import "variables";
 @import "normalize";
+
 @import "/src/components/Header/header.scss";
 @import "/src/components/Input/input.scss";
 @import "/src/components/Sort/sort.scss";
@@ -12,6 +13,7 @@
 @import "/src/components/Button/button.scss";
 @import "/src/components/RandomCard/random-card.scss";
 @import "/src/components/Pagination/pagination.scss";
+
 @import "/src/pages/BeerInfo/beerinfo.scss";
 @import "/src/pages/Random/random.scss";
 @import "/src/pages/About/about.scss";
@@ -21,6 +23,21 @@ body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(-45deg, #bcfe2f, #ee7752, #5551ff, #faff00);
+  background-size: 300% 300%;
+  animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 code {
@@ -52,7 +69,6 @@ code {
       margin-bottom: 30px;
     }
   }
- 
 
   &__top {
     display: flex;
@@ -71,22 +87,4 @@ code {
 
 .wrapper {
   min-height: 100%;
-}
-
-body {
-  background: linear-gradient(-45deg, #bcfe2f, #ee7752, #5551ff, #faff00);
-  background-size: 300% 300%;
-  animation: gradient 20s ease infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
