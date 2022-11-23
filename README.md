@@ -1,33 +1,12 @@
-### База данных пива
+## <a href="https://beer-indol.vercel.app/" target="_blank">Beer App</a>
 
-Vercel pages: https://beer-indol.vercel.app/
+База данных пива.
 
-Проект был выполнен в целях изучения React и Redux Toolkit.<br/> 
-Улучшения навыков работы с реальным API.<br/> 
-А так же погружения в такие темы как:
+## :hammer_and_wrench: Технологии
+React, Redux Toolkit, React-Router, SCSS
 
-- React
-- Redux Toolkit
-- SCSS
-- Hooks
-- Context API
-- react-router
-- Eslint
-- Жизненный цикл компонент и.т.д.
-<br />
-<br />
-### Beer database
-GitHub pages: https://beer-indol.vercel.app/
-
-The project was done for the purpose of learning React and Redux Toolkit.<br/>
-To improve my skills of working with the real API.<br/>
-As well as immersion in topics such as:
-
-- React
-- Redux Toolkit
-- SCSS
-- Hooks
-- Context API
-- react-router
-- Eslint
-- The lifecycle of a component etc.
+## Быстрый старт
+- Клонируйте репозиторий: `git clone https://github.com/mikhailmtion/beer.git`
+- Перейдите в папку с проектом: `cd screen-three-react`
+- Установите зависимости: `npm install`
+- Запустите проект: `npm start`
